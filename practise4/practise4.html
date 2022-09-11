@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <main class="d-flex">
+        <section class="my-5 mx-3">
+            <h2>Contact Me</h2>
+            <div class="p-2">
+                <input id="name-input" type="text" placeholder="Enter Your Name">
+                <button onclick="btnDeleteName()" class="btn btn-danger">Delete</button>
+                <button onclick="btnSendName()" class="btn btn-primary">Send Name</button>
+            </div>
+            <div class="p-2">
+                <input id="email-input" type="email" placeholder="Enter Your Email">
+                <button onclick="btnDeleteEmail()" class="btn btn-danger">Delete</button>
+                <button onclick="btnSendEmail()" class="btn btn-primary">Send Email</button>
+            </div>
+            <div class="p-2">
+                <textarea id="msg-input" name="" id="" cols="50" rows="5" placeholder="Message"></textarea> <br>
+                <button onclick="btnDeleteMsg()" class="btn btn-danger">Delete</button>
+                <button onclick="btnSendMsg()" class="btn btn-primary">Send Email</button>
+            </div>
+
+            <div class="p-5">
+                <button onclick="btnSendAll()" class="btn btn-primary">Send</button>
+                <button onclick="resetAll()" class="btn btn-danger">Reset All</button>
+            </div>
+        </section>
+
+        <section class="my-5 mx-3">
+                <h3>Your Informations:</h3>
+                <div id="info-container">
+                </div>
+        </section>
+    </main>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+    <script src="practise4.js"></script>
+</body>
+
+</html>
